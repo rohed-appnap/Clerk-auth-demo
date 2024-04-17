@@ -1,4 +1,5 @@
 import { UserButton } from "@clerk/nextjs";
+import { Button } from "../../@/components/ui/button";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="bg-white rounded-full border w-[5rem] h-[5rem] flex items-center justify-center">
         <UserButton afterSignOutUrl="/" />
       </div>
+      <Button className="button bg-purple-gradient bg-cover">Click Me</Button>
     </div>
   );
 }
